@@ -13,6 +13,7 @@ fonttools==4.55.3
 gitdb==4.0.12
 GitPython==3.1.44
 idna==3.10
+ipywidgets
 Jinja2==3.1.5
 jsonschema==4.23.0
 jsonschema-specifications==2024.10.1
