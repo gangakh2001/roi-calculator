@@ -1,0 +1,12 @@
+import os
+
+# Ensure the Streamlit configuration folder exists
+config_dir = os.path.expanduser("~/.streamlit")
+os.makedirs(config_dir, exist_ok=True)
+
+# Define the path for the config.toml file
+config_path = os.path.join(config_dir, "config.toml")
+
+# Write the configuration to enable iframe embedding
+with open(config_path, "w") as config_file:
+    config_file.write("[server]\nenableCORS = false\n")
